@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* profile name */
  .profile{ 
     margin-top: 150px;
 } 
@@ -32,6 +33,7 @@
     color: rgb(107, 203, 203);
     text-shadow: 2px 2px 5px cyan;
 }
+/* download btn */
 #cvbtn{
     background-color: darkcyan;
     color: black;
@@ -43,6 +45,7 @@
 #cvbtn:hover{
     background-color:cyan;
 }
+/* profile animate */
 #profilename{
     animation: helo 0.4s ease-in 1;
 }
@@ -54,18 +57,10 @@
     transform: translateX(0%);
 }
 }
+/* nav bar */
 header li{
     animation: ul 0.4s ease-in 1;
 }
-/* @keyframes ul{
-    0%{
-        transform: translateY(-100%);
-        
-    }
-100%{
-    transform: translateY(0%);
-}
-} */
 @keyframes ul {
     0% { transform: translateX(0);
         transform: translateX(-100%); }
@@ -87,9 +82,24 @@ header li{
 .nav-link:focus{
     color: aliceblue !important;
 }
+/* brand */
  .navbar-brand{
     color:aqua !important ;
     text-transform: uppercase;
     font-weight: 700;
     font-style: oblique;
 } 
+/* profile image */
+.img-fluid{
+    background-color: rgba(11, 210, 236, 0.956) !important;
+    /* margin-top: -100px; */
+    box-shadow: 4px 4px 6px cyan,-4px -4px 6px cyan;
+    border-radius: 50px;
+    animation: image 1.5s ease-in-out infinite;
+
+}
+@keyframes image {
+    0% { box-shadow: 0 0 5px cyan; }
+    50% { box-shadow: 0 0 20px cyan; }
+    100% { box-shadow: 0 0 5px cyan; }
+}
